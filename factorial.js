@@ -18,16 +18,34 @@ rl.question("enter your choice (1-3)", choice =>{
         console.log ("factorial!");
 
         rl.question("Enter a number for factorial: ", (numStr)=>{
-            let num = parseInt(numStr);
-            if (isNaN() ) || num <0){
-                console.log("Please enter a non-negative integer");
-        
-    } else {
+            let num = parseInt(numStr);}
+              
+            if (isNaN(num) ) || num <0){
+                console.log("Invalid number.please try agian");
+            } else{
+    
+
          let fact = 1;
-         for(let i = 1; i <= num ; i itt){
+         for(let i = 1; i <= num ; i i++){
+            fact *=i;
 
          }
-        console.log("The factorial of "+ num + " fact);
-    }
+        console.log ("The factorial of "+ num + " fact);
+        
+        } else{
+            console.log(Invalid choice. please try agian.");
 
+        }
+} else if (choice=="3"){
+console.log (Existing Program... Goodbye!");
+
+} else {
+      
 });
+function backtomenu(){
+    console.log("--------");
+    console.log("1. back to menu");
+    console.log("2. exist");
+    rl.question(what would you like to do next? (1-2)) :", (backtomenuchoice)
+}
+ 
