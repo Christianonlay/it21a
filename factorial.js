@@ -52,3 +52,10 @@ function computerfactorial(){
     backtoMenu();
 });
 }
+
+function backtoMenu(){
+    console.log("-------");
+    console.log("1. back to menu");
+    console.log("2. Exit");
+    rl.question("what would you like to do next? (1-2) :", (backtoMenuChoice)=>{
+        if()
