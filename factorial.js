@@ -57,5 +57,22 @@ function backtoMenu(){
     console.log("-------");
     console.log("1. back to menu");
     console.log("2. Exit");
-    rl.question("what would you like to do next? (1-2) :", (backtoMenuChoice)=>{
-        if()
+
+    rl.question("what would you like to do next? (1-2) :", (backtoMenuChoice) =>{
+
+    if(backtoMenuChoice ==="1"){
+    console.clear();
+    mainMenu();
+
+    } else if (backtoMenuChoice ==="2"){
+        console.log("exiting program....Goodbye");
+        rl.close();
+    } else {
+        console.log ("Invalid choice. Please try again");
+        backtoMenu();
+    }
+
+})
+
+}
+mainMenu();
