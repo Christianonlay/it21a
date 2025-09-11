@@ -6,7 +6,7 @@ class person{
         this.occupition = occupition;
 
     }
-     getname(){
+     getName(){
         console.log(this.name);
     }
     displayInfo(){
