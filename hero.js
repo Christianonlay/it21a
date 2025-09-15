@@ -11,9 +11,13 @@ class hero{
         return this.#health;
     }
 }
+class Warrior extends Hero{
+    useAbility(){
+        console.log(`${this.name} uses.power Strike`);
+    }
+}
 
-const hero = new hero("Thorin",100,10);
+const warrior = new Warrior("Thorin",100,10);
 
-hero.health();
-console.log(hero.getHealth());
+warrior.useAbility();
 
