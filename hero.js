@@ -1,7 +1,7 @@
 class Hero{
     #health;
 
-    contructor (name,health,attack){
+    constructor (name,health,attack){
         this.name = name;
         this.#health = health;
         this.attack = attack;
@@ -24,8 +24,8 @@ class Mage extends Hero{
 }
 
 useAbility(){
-    console.log(`${this.name} casts Fireball!`);
-}
+    console.log(`${this.name} casts Fireball`);
+    }
 }
 const warrior = new Warrior("Thorin",100,10);
 
