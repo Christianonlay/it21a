@@ -10,6 +10,11 @@ class Hero{
     getHealth(){
         return this.#health;
     }
+    getStats(){
+        console.log("Name: " + this.name);
+        console.log("Health: " + this.#health);
+        console.log("Attack: " + this.attack);   
+    }
 }
 class Warrior extends Hero{
     useAbility(){
@@ -27,10 +32,22 @@ useAbility(){
     console.log(`${this.name} casts Fireball`);
     }
 }
+performAbality(Thorin);
+performAbality(Gandalf);
+
 const warrior = new Warrior("Thorin",100,10);
 
-warrior.useAbility();
+//Thorin.useAbility();
+Thorin.getStats();
 
-const mage = new Mage("Gandal",80,8,50);
-mage.useAbility();
+const mage = new Mage("Gandalf",80,8,50);
+//Gandalf.useAbility();
+Gandalf.getStats();
+
+function performAbality(Hero){
+    console.log("\n");
+    Hero.useAbility();
+}
+performAbality(Thorin);
+performAbality(Gandalf);
 
