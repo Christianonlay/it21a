@@ -81,14 +81,10 @@ onsole.log(Thorin.totalAttack());
 Thorin.addItem(sword);
 onsole.log(Thorin.totalAttack());
 
-
-//Thorin.useAbility();
-Thorin.getStats();
-
-const mage = new Mage("Gandalf",80,8,50);
+//const mage = new Mage("Gandalf",80,8,50);
 //Gandalf.useAbility();
-Gandalf.getStats();
+//Gandalf.getStats();
 
-performAbality(Thorin);
-performAbality(Gandalf);
+//performAbality(Thorin);
+//performAbality(Gandalf);
 
